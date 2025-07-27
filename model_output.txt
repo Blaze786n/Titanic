@@ -1,0 +1,52 @@
+
+Call:
+ randomForest(formula = Survived ~ ., data = trainData, ntree = 100,      mtry = 3, importance = TRUE) 
+               Type of random forest: classification
+                     Number of trees: 100
+No. of variables tried at each split: 3
+
+        OOB estimate of  error rate: 17.12%
+Confusion matrix:
+    0   1 class.error
+0 351  34  0.08831169
+1  73 167  0.30416667
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 138  28
+         1  26  74
+                                          
+               Accuracy : 0.797           
+                 95% CI : (0.7436, 0.8437)
+    No Information Rate : 0.6165          
+    P-Value [Acc > NIR] : 1.928e-10       
+                                          
+                  Kappa : 0.5691          
+                                          
+ Mcnemar's Test P-Value : 0.8918          
+                                          
+            Sensitivity : 0.8415          
+            Specificity : 0.7255          
+         Pos Pred Value : 0.8313          
+         Neg Pred Value : 0.7400          
+             Prevalence : 0.6165          
+         Detection Rate : 0.5188          
+   Detection Prevalence : 0.6241          
+      Balanced Accuracy : 0.7835          
+                                          
+       'Positive' Class : 0               
+                                          
+                     0          1 MeanDecreaseAccuracy MeanDecreaseGini
+PassengerId  0.5722635  3.9321918             2.995027        29.673071
+Pclass       9.7171959  8.7730823            13.484264        22.114961
+Name         0.5176831  0.9885935             1.068238        26.131504
+Sex         24.0785856 27.4992596            31.863438        70.869675
+Age          8.8756323  5.7074532            10.671466        31.777030
+SibSp        6.7657081  0.4123424             5.741137         9.738136
+Parch        5.1404562  1.4836303             4.919684         7.310324
+Ticket       8.6468145  2.2026066             8.050633        37.725611
+Fare         6.4580581  8.6267905            10.849726        36.671979
+EmbarkedC    1.8654266  1.5036082             2.699978         3.047162
+EmbarkedQ    0.7409751  3.4077933             2.999305         1.670902
+EmbarkedS    3.0432182  3.3972095             4.813041         4.589225
